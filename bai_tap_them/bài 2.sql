@@ -3,9 +3,9 @@ use libary;
 
 create table student(
 id int primary key,
-class_name varchar(50),
 `name` varchar(50),
-`birthday` date 
+`birthday` date, 
+class_name varchar(50)
 );
 
 create table book(
@@ -24,11 +24,11 @@ id int primary key,
 );
 
 create table borrows(
+id int primary key,
 student_id int,
 book_id int,
-primary key(student_id,book_id),
-borrow_date datetime,
-borrow_end datetime,
+borrow_date date,
+borrow_end date,
 foreign key(student_id) references student(id),
 foreign key(book_id) references book(book_id)
 );
