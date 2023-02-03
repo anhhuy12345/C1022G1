@@ -15,6 +15,22 @@
             font-weight: bolder;
 
         }
+
+        button {
+            width: 100px;
+            height: 100px;
+            background: black;
+            transition-property: width;
+            transition-duration: 2s;
+            transition-timing-function: linear;
+            transition-delay: 0s;
+        }
+
+        button:hover {
+            width: 200px;
+
+        }
+
     </style>
 </head>
 <body>
@@ -25,9 +41,27 @@
 </header>
 <p style="text-align: center; font-size: 30px">With this responsive landing page template,
     you can promote your all hosting, domain and email services </p>
-<p style="text-align: center; color: black"><button>
-    view plan
-</button>  <button>All Features</button></p>
+
+<div style="display: flex;
+    justify-content: space-around;" >
+    <div>
+        <button>
+            <div style=" color: white;margin-left: -40px">
+                <ul>
+                    View Plans
+
+                </ul>
+            </div>
+        </button>
+        <button>
+            <div style="color: white; margin-left: -40px">
+                <ul>
+                    All Featues
+                </ul>
+            </div>
+        </button>
+    </div>
+</div>
 
 </body>
 </html>
