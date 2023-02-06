@@ -40,7 +40,7 @@ public class LoginServlet extends HttpServlet {
 
         if (userLogin != null) {
             // đăng nhập thành công
-            response.sendRedirect("/home");
+            response.sendRedirect("/Successs.jsp");
         } else {
             // đăng nhập thấ bại
             messLogin = "Tên Đăng Nhập Hoặc Mật Khẩu Không Đúng!";
