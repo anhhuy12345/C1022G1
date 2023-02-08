@@ -10,3 +10,4 @@ insert into student (id,name,point) values
 (2,'Đinh Minh Thông',80),
 (3,'Lê Đức Nghĩa',50),
 (4,'Nguyễn Hoàng Duy',60);
+select*from student;
