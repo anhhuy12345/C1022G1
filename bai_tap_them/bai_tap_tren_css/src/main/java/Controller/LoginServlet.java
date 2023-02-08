@@ -11,13 +11,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-@WebServlet(name = "LoginServlet", urlPatterns = "/login")
+@WebServlet(name = "FuramaSverlet", urlPatterns = "/login")
 public class LoginServlet extends HttpServlet {
     private static List<User> userList = new ArrayList<>();
 
     static {
         userList.add(new User(1, "admin", "123abc"));
-    }
+     }
 
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

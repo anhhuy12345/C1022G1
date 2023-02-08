@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   model.User: Admin
@@ -11,5 +12,6 @@
     <title>Login</title>
   </head>
   <body>
+  <c:import url="/login"></c:import>
   </body>
 </html>
