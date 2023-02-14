@@ -42,4 +42,20 @@ public class BookServiceImpl implements IBookService {
         return errors;
 
     }
+
+    @Override
+    public Books selectBooks(String id) {
+        return bookRepository.selectBooks(id);
+    }
+
+    @Override
+    public boolean updateBook(Books books) {
+        return bookRepository.updateBook(books);
+    }
+
+    @Override
+    public boolean deleteBook(String id) {
+        bookRepository.deleteBook(id);
+        return false;
+    }
 }

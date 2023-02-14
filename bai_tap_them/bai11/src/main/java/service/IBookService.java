@@ -13,4 +13,10 @@ public interface IBookService {
     List<Books>delete();
 
     Map<String, String> add(Books books);
+
+    Books selectBooks(String id);
+
+    boolean updateBook(Books books);
+
+    boolean deleteBook(String id);
 }

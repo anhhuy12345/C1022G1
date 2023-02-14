@@ -5,11 +5,15 @@ import model.Books;
 import java.util.List;
 
 public interface IBookRepository {
-    List<Books>showAll();
+    List<Books> showAll();
 
-    List<Books>find();
+    List<Books> find();
 
-    List<Books>delete();
+    boolean deleteBook(String id);
 
     boolean add(Books books);
+
+    Books selectBooks(String id);
+
+    boolean updateBook(Books books);
 }

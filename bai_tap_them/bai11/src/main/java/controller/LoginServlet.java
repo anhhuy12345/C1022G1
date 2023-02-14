@@ -19,6 +19,7 @@ public class LoginServlet extends HttpServlet {
 
     static {
         userList.add(new User(1, "admin", "123abc"));
+        userList.add(new User(2,"huy123","123abc"));
      }
 
 
@@ -42,7 +43,7 @@ public class LoginServlet extends HttpServlet {
 
         if (userLogin != null) {
             // đăng nhập thành công
-            response.sendRedirect("/Successs.jsp");
+            response.sendRedirect("/view/interface/home.jsp");
         } else {
             // đăng nhập thấ bại
             messLogin = "Tên Đăng Nhập Hoặc Mật Khẩu Không Đúng!";
