@@ -22,9 +22,16 @@
         font-size: 300%;font-weight: bold;color: coral;margin-left: 200px">
             Thư Viện Nhóm 7</a>
     </div>
-    <div class="col-md-3">
-        <a style="font-family: 'Times New Roman';font-size: 100%;font-weight: bold;margin-left: 120px"></a>
+    <div class="col-md-3 ">
+        <c:if test="${sessionUser!=null}">
+            <span class="text-info col-md-6 $green-700 fw-bold">${sessionUser.username}</span>
+            <a class="text-info col-md-6 fw-bold" href="/login" style="text-decoration: none;">logout</a>
+        </c:if>
+        <c:if test="${sessionUser==null}">
+            <a class="text-info col-md-6 fw-bold" href="/login" style="text-decoration: none;">login</a>
+        </c:if>
     </div>
+
 </div>
 <div class="mt-2 sticky row" style="background: #ecf4f4;margin-top: -0.5rem!important;">
     <nav class="navbar navbar-light">
